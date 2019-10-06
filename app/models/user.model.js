@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+
+const UserSchema = mongoose.Schema({
+    name: String,
+    phone: Number,
+    firstLevelFriends: [ {type: mongoose.Schema.Types.ObjectId, ref: 'User'} ]
+}, {
+    timestamps: true
+});
+
+module.exports = mongoose.model('User', UserSchema);
