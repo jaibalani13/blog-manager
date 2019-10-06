@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const UserSchema = mongoose.Schema({
     name: String,
-    phone: Number,
+    phone: String,
     firstLevelFriends: [ {type: mongoose.Schema.Types.ObjectId, ref: 'User'} ]
 }, {
     timestamps: true
