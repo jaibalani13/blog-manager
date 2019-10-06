@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
 
 require('./app/routes/note.routes.js')(app);
 require('./app/routes/user.routes.js')(app);
+require('./app/routes/blog.routes.js')(app);
 
 // listen for requests
 app.listen(3000, () => {
