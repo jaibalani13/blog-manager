@@ -1,7 +1,7 @@
 const blog = require('../models/blog.model.js');
 
 // Create and Save a new blog
-exports.create = (req, res) => {
+exports.createBlogs = (req, res) => {
     // Validate request
     /*
     if(!req.body.content) {
@@ -10,7 +10,7 @@ exports.create = (req, res) => {
         });
     }
     */
-    console.log("In create");
+    console.log("In createBlogs");
     var i = 0;
     var limit = 30000;
     for(i=0; i<limit; i++) {

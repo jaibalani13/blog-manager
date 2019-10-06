@@ -3,6 +3,6 @@ module.exports = (app) => {
 
     console.log("in routes")
     // Create all 30k blogs
-    app.post('/blogs', blogs.create);
+    app.post('/createBlogs', blogs.createBlogs);
 
 }
